@@ -1,0 +1,10 @@
+[project]
+name = "clip-reshaper"
+version = "0.1.0"
+description = "ComfyUI custom nodes to reshape/project Conditioning tensors and ensure SDXL conditioning metadata."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.black]
+line-length = 100
