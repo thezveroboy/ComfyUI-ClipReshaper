@@ -8,7 +8,8 @@ Key capabilities:
 - Reshape embeddings via padding/slicing or learnable linear projection
 - Ensure SDXL-compatible metadata (size fields, pooled_output)
 
-Use cases: Cross-model CLIP adapter workflows, dimension debugging, SDXL pipeline fixes, experimental embedding space transformations.
+Use cases:
+Cross-model CLIP adapter workflows, dimension debugging, SDXL pipeline fixes, experimental embedding space transformations.
 
 ComfyUI custom nodes for:
 - Inspecting conditioning tensor dimensions
@@ -70,6 +71,7 @@ Restart ComfyUI.
 
 Pad/slice and untrained linear projection do not guarantee semantic correctness.
 For real CLIP-to-CLIP conversion you need trained adapter weights.
+
 
 
 
