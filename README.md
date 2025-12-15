@@ -7,6 +7,8 @@ ComfyUI custom nodes for:
 - Linear projection D_in -> D_out (optionally load trained weights)
 - Ensuring SDXL-style conditioning metadata (width/height/crop/target, pooled_output)
 
+![comfy-csm](https://github.com/thezveroboy/ComfyUI-ClipReshaper/raw/main/picture.jpg)
+
 ## CR_ConditioningInspect
 
 English:
@@ -58,4 +60,5 @@ Restart ComfyUI.
 
 Pad/slice and untrained linear projection do not guarantee semantic correctness.
 For real CLIP-to-CLIP conversion you need trained adapter weights.
+
 
