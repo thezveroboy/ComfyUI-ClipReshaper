@@ -1,5 +1,15 @@
 # Clip Reshaper
 
+ComfyUI-ClipReshaper is a collection of custom nodes designed to solve dimension mismatch errors and metadata inconsistencies in ComfyUI workflows. These utilities enable inspection, validation, transformation, and metadata enforcement for conditioning tensors, particularly useful when working with different CLIP encoders (SD1.5 ↔️ SDXL), experimental adapters, or debugging "matrix multiplication shape" crashes.
+
+Key capabilities:
+- Inspect conditioning tensor shapes and metadata structure
+- Assert expected dimensions to fail early with clear error messages
+- Reshape embeddings via padding/slicing or learnable linear projection
+- Ensure SDXL-compatible metadata (size fields, pooled_output)
+
+Use cases: Cross-model CLIP adapter workflows, dimension debugging, SDXL pipeline fixes, experimental embedding space transformations.
+
 ComfyUI custom nodes for:
 - Inspecting conditioning tensor dimensions
 - Early dimension assertions (catch matmul errors sooner)
@@ -60,6 +70,7 @@ Restart ComfyUI.
 
 Pad/slice and untrained linear projection do not guarantee semantic correctness.
 For real CLIP-to-CLIP conversion you need trained adapter weights.
+
 
 
 
